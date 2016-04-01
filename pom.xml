@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.eurekaclinical</groupId>
+    <artifactId>eurekaclinical-parent-cas</artifactId>
+    <version>1-Alpha-1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Eureka! Clinical Parent Extras for CAS</name>
+    <description>Parent pom.xml for all CAS-related Eureka! Clinical projects</description>
+    <inceptionYear>2016</inceptionYear>
+    <url>https://github.com/eurekaclinical/eurekaclinical-parent-cas.git</url>
+
+    <parent>
+        <groupId>org.eurekaclinical</groupId>
+        <artifactId>eurekaclinical-parent</artifactId>
+        <version>1-Alpha-14-SNAPSHOT</version>
+    </parent>
+    
+    <properties>
+        <cas.version>3.5.2</cas.version>
+        <spring.version>3.1.0.RELEASE</spring.version>
+        <apache.commons.pool.version>1.6</apache.commons.pool.version>
+    </properties>
+    
+    <scm>
+        <connection>scm:git:https://github.com/eurekaclinical/eurekaclinical-parent-cas.git</connection>
+        <developerConnection>scm:git:https://github.com/eurekaclinical/eurekaclinical-parent-cas.git</developerConnection>
+        <url>https://github.com/eurekaclinical/eurekaclinical-parent-cas.git</url>
+        <tag>HEAD</tag>
+    </scm>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jasig.cas</groupId>
+                <artifactId>cas-server-core</artifactId>
+                <version>${cas.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jasig.cas</groupId>
+                <artifactId>cas-server-support-jdbc</artifactId>
+                <version>${cas.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jasig.cas</groupId>
+                <artifactId>cas-server-webapp</artifactId>
+                <version>${cas.version}</version>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>org.jasig.cas</groupId>
+                <artifactId>cas-server-integration-restlet</artifactId>
+                <version>${cas.version}</version>
+                <type>jar</type>
+            </dependency>                
+            <dependency>
+                <groupId>org.jasig.cas</groupId>
+                <artifactId>cas-server-support-trusted</artifactId>
+                <version>${cas.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jasig.cas</groupId>
+                <artifactId>cas-server-support-ldap</artifactId>
+                <version>${cas.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-ldap</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jasig.cas</groupId>
+                <artifactId>cas-server-support-oauth</artifactId>
+                <version>${cas.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-pool</groupId>
+                <artifactId>commons-pool</artifactId>
+                <version>${apache.commons.pool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jstl</groupId>
+                <artifactId>jstl</artifactId>
+                <version>1.2</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
