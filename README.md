@@ -1,3 +1,28 @@
 # eurekaclinical-parent-cas
-Parent pom for CAS-related projects. It depends on the [eurekaclinical-parent](https://github.com/eurekaclinical/eurekaclinical-parent) organization pom. It adds JASIG CAS server 3.5.2 and the official CAS Java client as dependencies in the `dependencyManagement` section of the pom. If you use this as a parent pom, you still need to add CAS server and client as dependencies but without the version number as follows:
+[Atlanta Clinical and Translational Science Institute (ACTSI)](http://www.actsi.org), [Emory University](http://www.emory.edu), Atlanta, GA
 
+# What does it do?
+It is a parent pom for CAS-related projects. It depends on the [eurekaclinical-parent](https://github.com/eurekaclinical/eurekaclinical-parent) organization pom. It specifies versions of all of the JASIG CAS server packages in the `dependencyManagement` section. If you use this as a parent pom, you still need to specify the dependencies that you need in your dependencies section.
+
+## Version 2 development series
+Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/protempa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/protempa)
+
+## Version history
+### Version 1
+Provides CAS server version 3.5.2.
+
+## Requirements
+* [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
+* [Maven 3.2.5 or greater](https://maven.apache.org)
+
+## Maven dependency
+```
+<parent>
+    <groupId>org.eurekaclinical</groupId>
+    <artifactId>eurekaclinical-parent-cas</artifactId>
+    <version>version</version>
+</parent>
+```
+
+## Getting help
+Feel free to contact us at help@eurekaclinical.org.
