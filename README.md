@@ -36,7 +36,7 @@ Provides CAS server version 3.5.2.
 * [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 * [Maven 3.2.5 or greater](https://maven.apache.org)
 
-## Maven dependency
+## Specifying this pom as a parent
 ```
 <parent>
     <groupId>org.eurekaclinical</groupId>
