@@ -2,7 +2,7 @@
 [Atlanta Clinical and Translational Science Institute (ACTSI)](http://www.actsi.org), [Emory University](http://www.emory.edu), Atlanta, GA
 
 # What does it do?
-It is a parent pom for CAS-related projects. It depends on the [eurekaclinical-parent](https://github.com/eurekaclinical/eurekaclinical-parent) organization pom. It specifies versions of all of the JASIG CAS server packages in the `dependencyManagement` section. If you use this as a parent pom, you still need to specify the dependencies that you need in your dependencies section.
+It is a parent pom for Eureka! Clinical CAS server-related projects. It depends on the [eurekaclinical-parent](https://github.com/eurekaclinical/eurekaclinical-parent) organization pom. It specifies versions of all of the JASIG CAS server packages in the `dependencyManagement` section. If you use this as a parent pom, you still need to specify the dependencies that you need in your dependencies section.
 
 Here are the packages and what they do:
 
