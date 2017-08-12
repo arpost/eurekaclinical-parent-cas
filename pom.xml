@@ -19,6 +19,7 @@
     <properties>
         <cas.version>3.5.3</cas.version>
         <spring.version>3.1.1.RELEASE</spring.version>
+        <spring.security.version>3.1.0.RELEASE</spring.security.version>
         <apache.commons.pool.version>1.6</apache.commons.pool.version>
     </properties>
     
@@ -66,7 +67,7 @@
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-ldap</artifactId>
-                <version>${spring.version}</version>
+                <version>${spring.security.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jasig.cas</groupId>
@@ -77,11 +78,6 @@
                 <groupId>commons-pool</groupId>
                 <artifactId>commons-pool</artifactId>
                 <version>${apache.commons.pool.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>jstl</groupId>
-                <artifactId>jstl</artifactId>
-                <version>1.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
