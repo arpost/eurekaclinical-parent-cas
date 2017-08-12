@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.eurekaclinical</groupId>
     <artifactId>eurekaclinical-parent-cas</artifactId>
-    <version>2-Beta-2-SNAPSHOT</version>
+    <version>2-Beta-2</version>
     <packaging>pom</packaging>
     <name>Eureka! Clinical Parent Extras for CAS</name>
     <description>Parent pom.xml for all CAS-related Eureka! Clinical projects</description>
@@ -27,7 +27,7 @@
         <connection>scm:git:https://github.com/eurekaclinical/eurekaclinical-parent-cas.git</connection>
         <developerConnection>scm:git:https://github.com/eurekaclinical/eurekaclinical-parent-cas.git</developerConnection>
         <url>https://github.com/eurekaclinical/eurekaclinical-parent-cas.git</url>
-        <tag>HEAD</tag>
+        <tag>eurekaclinical-parent-cas-2-Beta-2</tag>
     </scm>
     
     <dependencyManagement>
