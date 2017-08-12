@@ -17,7 +17,7 @@
     </parent>
     
     <properties>
-        <cas.version>3.5.3</cas.version>
+        <cas.version>3.6.0</cas.version>
         <spring.version>3.1.1.RELEASE</spring.version>
         <spring.security.version>3.1.0.RELEASE</spring.security.version>
         <apache.commons.pool.version>1.6</apache.commons.pool.version>
