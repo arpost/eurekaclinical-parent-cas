@@ -30,10 +30,10 @@ Here are the packages and what they do:
 
 ## Version history
 ### Version 3
-Provides CAS server version 3.6.0 and depends on eurekaclinical-parent version 3.
+Depends on eurekaclinical-parent version 3.
 
 ### Version 2
-Provides CAS server version 3.5.3 and depends on eurekaclinical-parent version 2.
+Provides CAS server version 3.6.0 and depends on eurekaclinical-parent version 2.
 
 ### Version 1
 Provides CAS server version 3.5.2 and depends on eurekaclinical-parent version 1.
