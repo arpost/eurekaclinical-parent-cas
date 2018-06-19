@@ -1,5 +1,5 @@
-# eurekaclinical-parent-cas
-[Atlanta Clinical and Translational Science Institute (ACTSI)](http://www.actsi.org), [Emory University](http://www.emory.edu), Atlanta, GA
+# Eureka! Clinical Parent pom.xml for CAS
+[Georgia Clinical and Translational Science Alliance (Georgia CTSA)](http://www.georgiactsa.org), [Emory University](http://www.emory.edu), Atlanta, GA
 
 # What does it do?
 It is a parent pom for Eureka! Clinical CAS server-related projects. It depends on the [eurekaclinical-parent](https://github.com/eurekaclinical/eurekaclinical-parent) organization pom. It specifies versions of all of the JASIG CAS server packages in the `dependencyManagement` section. If you use this as a parent pom, you still need to specify the dependencies that you need in your dependencies section.
@@ -29,8 +29,14 @@ Here are the packages and what they do:
 
 
 ## Version history
+### Version 3
+Provides CAS server version 3.6.0 and depends on eurekaclinical-parent version 3.
+
+### Version 2
+Provides CAS server version 3.5.3 and depends on eurekaclinical-parent version 2.
+
 ### Version 1
-Provides CAS server version 3.5.2.
+Provides CAS server version 3.5.2 and depends on eurekaclinical-parent version 1.
 
 ## Requirements
 * [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
