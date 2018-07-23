@@ -29,7 +29,29 @@
         <url>https://github.com/nityanandareddy/eurekaclinical-parent-cas.git</url>
         <tag>HEAD</tag>
     </scm>
-    
+    <build>
+    	<plugins>
+			<plugin>
+               	<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4.1</version>
+                <executions>
+                    <execution>
+                        <id>enforce-dependencies</id>
+                        <phase/>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+             				 <rules>
+                        		<dependencyConvergence/>
+              				 </rules>
+           		   	    </configuration>
+                     </execution>
+                </executions>
+            </plugin>
+    	</plugins>
+    </build>
     <dependencyManagement>
         <dependencies>
             <dependency>
