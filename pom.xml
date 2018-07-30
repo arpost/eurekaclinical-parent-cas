@@ -38,15 +38,10 @@
                 <executions>
                     <execution>
                         <id>enforce-dependencies</id>
-                        <phase />
+                        <phase/>
                         <goals>
                             <goal>enforce</goal>
                         </goals>
-                        <configuration>
-             				 <rules>
-                        		<dependencyConvergence />
-              				 </rules>
-           		   	    </configuration>
                      </execution>
                 </executions>
             </plugin>
@@ -101,6 +96,18 @@
                 <artifactId>commons-pool</artifactId>
                 <version>${apache.commons.pool.version}</version>
             </dependency>
+             <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.6.2</version>
+      </dependency>
+            <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>1.7.25</version>
+      <scope>compile</scope>
+    </dependency>
+    
         </dependencies>
     </dependencyManagement>
 </project>
