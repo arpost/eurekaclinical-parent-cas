@@ -30,6 +30,25 @@
         <tag>HEAD</tag>
     </scm>
     
+    <build>
+    	<plugins>
+			<plugin>
+               	<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4.1</version>
+                <executions>
+                    <execution>
+                        <id>enforce-dependencies</id>
+                        <phase />
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                     </execution>
+                </executions>
+            </plugin>
+    	</plugins>
+    </build>
+    
     <dependencyManagement>
         <dependencies>
             <dependency>
